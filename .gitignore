@@ -1,2 +1,24 @@
-hackathon/
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS junk
+.DS_Store
+.AppleDouble
+._*
+
+# Gradio / ML caches
+gradio_cache/
+.cache/
+.huggingface/
+
+# Large files / temp
+*.log
+gradio_cache/
