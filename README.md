@@ -1,45 +1,36 @@
-# Hackathon AI Demo – 2026  
-Простой мультимодальный анализатор данных с интерфейсом Gradio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A simple yet powerful Gradio-based web application that analyzes different types of data (text, images, tables) using modern pre-trained AI models.
+## Getting Started
 
-## Что уже работает / Current Features
+First, run the development server:
 
-**Русский**  
-- Анализ тональности текста (позитив / негатив / нейтраль) на основе RoBERTa  
-  (модель: cardiffnlp/twitter-roberta-base-sentiment-latest)  
-- Поддержка Apple Silicon (M1/M2/M3) через MPS  
-- Публичная ссылка через Gradio (`share=True`) для демонстрации жюри  
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-**English**  
-- **Text Sentiment Analysis**  
-  Real-time positive / neutral / negative classification using RoBERTa-based model  
-  (cardiffnlp/twitter-roberta-base-sentiment-latest)  
-- **Hardware Acceleration**  
-  Automatic detection and usage of Apple MPS (Metal Performance Shaders) when available, fallback to CPU  
-- **Public Sharing**  
-  Gradio `share=True` → instant public demo link for judges / team  
-- **Clean Modular Structure**  
-  Separate data processing functions ready for easy extension (tables, images, more NLP tasks)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Планы до дедлайна / Planned Features (next steps)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Русский**  
-- Добавить классификацию изображений (Vision Transformer или EfficientNet)  
-- Добавить обработку табличных данных (простая нейросеть или XGBoost / TabPFN)  
-- Красивый многостраничный интерфейс с вкладками (gr.TabbedInterface)  
-- Поддержка казахского / русского языков (мультиязычные модели)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-**English**  
-- Image classification (Vision Transformer or EfficientNet)  
-- Tabular data prediction (simple neural net or gradient boosting / TabPFN)  
-- Multi-tab Gradio interface (text + image + csv upload)  
-- Support for Kazakh / Russian language models (multilingual sentiment)
+## Learn More
 
-## Запуск / Installation & Run
+To learn more about Next.js, take a look at the following resources:
 
-**Русский**  
-1. Клонируйте репозиторий  
-   ```bash
-   git clone https://github.com/yourusername/hackathon-ai-demo.git
-   cd hackathon-ai-demo
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
